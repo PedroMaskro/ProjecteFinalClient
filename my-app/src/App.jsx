@@ -1,4 +1,6 @@
 import './App.css'
+import { products } from './Data/products'
+
 
 function ProductForm() {
     const [name, setName] = useState("");
@@ -9,6 +11,8 @@ function ProductForm() {
         event.preventDefault();
     }
   
+    return (
+        <form onSubmit={this.handleSubmit}>
+    )
 }
 
-export default App
