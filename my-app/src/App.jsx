@@ -5,35 +5,47 @@ import { products } from './Data/products';
 
 function ProductForm() {
     const [name, setName] = useState("");
-    const [price, setPrice] = useState("");
+    const [category, setCategory] = useState("");
+    const [priceV, setPriceV] = useState("");
+    const [priceC, setPriceC] = useState("");
     const [date, setDate] = useState(Date());
 
     function handleSubmit(event) {
-        e.preventDefault();
-        alert("SUBMIT")
+        event.preventDefault();
+        alert("Recibido, añadiendo el producto a la proyecto...")
     }
     
      
     return (
         <>
-        <p>Nuevo producto</p>
-        <form onSubmit={handleSubmit}>
-            <div>
+        <p className="txtFormu">Nuevo producto!</p>
+        <form className="formu" onSubmit={handleSubmit}>
+            <div className="apartadoFormu">
                 <label>Nombre de Producto:</label>
-                <input type="text" onChange={(event)=>setName(e.target.value)}/>
+                <input className="input" type="text" onChange={(event)=>setName(e.target.value)}/>
             </div>
 
-            <div>
-                <label>Precio:</label>
-                <input type="text" onChange={(event)=>setPrice(e.target.value)}/>
+            <div className="apartadoFormu">
+                <label>Categoria:</label>
+                <input className="input" type="text" onChange={(event)=>setCategory(e.target.value)}/>
             </div>
 
-            <div>
-                <label>Fecha en la que se añadió</label>
-                <input type="date" name="fecha" onChange={(event)=>setDate(e.target.value)} />
+            <div className="apartadoFormu">
+                <label>Precio de venta:</label>
+                <input className="input" type="number" onChange={(event)=>setPriceV(e.target.value)}/>
             </div>
 
-            <div>
+            <div className="apartadoFormu">
+                <label>Precio de compra:</label>
+                <input className="input" type="number" onChange={(event)=>setPriceC(e.target.value)}/>
+            </div>
+
+            <div className="apartadoFormu">
+                <label>Cantidad minima para empezar a vender (existencias)</label>
+                <input className="input" type="number" onChange={(event)=>setDate(e.target.value)} />
+            </div>
+
+            <div className="apartadoFormu">
                 <button type="submit">AÑADIR</button>
             </div>
         </form>

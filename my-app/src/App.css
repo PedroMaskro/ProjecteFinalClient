@@ -182,3 +182,33 @@
     border-right-color: var(--border);
   }
 }
+
+.txtFormu {
+  font-family: 'Playfair Display', serif;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #542b3a;
+  background-color: white; 
+}
+
+ .formu {
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #542b3a;
+  border-radius: 8px;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+ .apartadoFormu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
