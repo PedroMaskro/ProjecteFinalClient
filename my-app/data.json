@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "nom": "Hydro Boost",
+      "category": "facial care",
+      "Descripcion": "Este producto hace que te veas mejor.",
+      "preuCompra": 20,
+      "cantitatDispo": 134,
+      "cuantitatMinExis": 25
+    },
+    {
+      "nombre": "LipCare",
+      "categoria": "Cuidado Facial",
+      "pventa": "15",
+      "pcompra": "5",
+      "cmin": "10",
+      "id": "U2zh3KvS9D4"
+    },
+    {
+      "nombre": "EyelineRC",
+      "categoria": "Cuidado Facial",
+      "pventa": "12",
+      "pcompra": "3",
+      "cmin": "15",
+      "id": "d6hHWbo8CNI"
+    },
+    {
+      "nombre": "MicaGlow",
+      "categoria": "Cuidado Facial",
+      "pventa": "90",
+      "pcompra": "28",
+      "cmin": "10",
+      "id": "yda4ZF1QBek"
+    },
+    {
+      "nombre": "MicaGlow",
+      "categoria": "Cuidado Facial",
+      "pventa": "90",
+      "pcompra": "7",
+      "cmin": "10",
+      "id": "WazdEYPs9h4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
